@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+### Credits to the owner
+This project was made based on sonnysangha's linked clone tutorial in youtube (https://www.youtube.com/watch?v=QaYts9sPmcY).
+
+Sonny's official channels for more information and greate stuff:
+Github: https://github.com/sonnysangha
+Youtube: https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA
+
+
 ## Available Scripts
 
 In the project directory, you can run:
