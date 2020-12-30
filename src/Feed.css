@@ -15,7 +15,7 @@
   border: 1px solid lightgray;
   border-radius: 30px;
   padding: 10px 15px 10px 10px;
-  color: gray;
+  color: gray;;
 }
 
 .feed__input > form {
@@ -29,6 +29,7 @@
   margin-left: 10px;
   outline-width: 0;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .feed__input > form > button {

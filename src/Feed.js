@@ -12,10 +12,15 @@ import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import { db } from './firebase';
 
 import firebase from 'firebase';
+import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 
 function Feed() {
   const [input, setInput] = useState('');
   const [posts, setPosts] = useState([]);
+
+  const user = useSelector(selectUser);
+  const { email, displayName: name, photoUrl } = user || {};
 
   useEffect(() => {
     db.collection('posts').orderBy('timestamp', 'desc').onSnapshot(snapshot => (
@@ -32,10 +37,10 @@ function Feed() {
     e.preventDefault();
 
     db.collection('posts').add({
-      name: 'Karl Jose Buena',
-      description: 'this is a test',
+      name,
+      description: email,
       message: input,
-      photoUrl: '',
+      photoUrl,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
 
