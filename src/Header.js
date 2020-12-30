@@ -30,18 +30,18 @@ function Header() {
         />
         <div className="header__search">
           <SearchIcon />
-          <input placeholder="Search" type="text" name="" id=""/>
+          <input placeholder="Search" type="text" name="" id="" />
         </div>
       </div>
 
       <div className="header_right">
-        <HeaderOption Icon={HomeIcon} title='home'/>
-        <HeaderOption Icon={SupervisorAccountIcon} title='My Network'/>
-        <HeaderOption Icon={BusinessCenterIcon} title='Jobs'/>
-        <HeaderOption Icon={ChatIcon} title='Messaging'/>
-        <HeaderOption Icon={NotificationsIcon} title='Notifications'/>
+        <HeaderOption Icon={HomeIcon} title='home' />
+        <HeaderOption Icon={SupervisorAccountIcon} title='My Network' />
+        <HeaderOption Icon={BusinessCenterIcon} title='Jobs' />
+        <HeaderOption Icon={ChatIcon} title='Messaging' />
+        <HeaderOption Icon={NotificationsIcon} title='Notifications' />
         <HeaderOption
-          avatar='https://media-exp1.licdn.com/dms/image/C5603AQHbK6W3AkiIsg/profile-displayphoto-shrink_100_100/0/1584342100874?e=1614816000&v=beta&t=7YLNlR6yxzlBDEExK6QZvaJiMd9hRnEHbMl4XWrByFk'
+          avatar={true}
           title='Me'
           onClick={logoutOfApp}
         />
