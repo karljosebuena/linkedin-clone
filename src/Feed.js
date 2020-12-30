@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './Feed.css'
 import CreateIcon from '@material-ui/icons/Create';
 import InputOption from './InputOption';
+import FlipMove from 'react-flip-move';
 import Post from './Post';
+import './Feed.css'
 
 import PhotoIcon from '@material-ui/icons/Photo';
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -66,15 +67,17 @@ function Feed() {
       </div>
 
       {/* Posts */}
-      {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
-        <Post
-          key={id}
-          name={name}
-          description={description}
-          message={message}
-          photoUrl={photoUrl}
-        />
-      ))}
+      <FlipMove>
+        {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+          <Post
+            key={id}
+            name={name}
+            description={description}
+            message={message}
+            photoUrl={photoUrl}
+          />
+        ))}
+      </FlipMove>
     </div>
   )
 }

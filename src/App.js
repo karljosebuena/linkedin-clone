@@ -36,6 +36,7 @@ function App() {
           <Sidebar />
           <Feed />
           {/* widgets */}
+          {/* <Winget */}
         </div>
       )}
     </div>
