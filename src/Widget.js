@@ -8,11 +8,11 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 const Widget = forwardRef((ref) => {
   const newsArticle = (heading, subtitle) => (
-    <div ref={ref} className="widget article">
-      <div className="wiget_articleLeft">
+    <div ref={ref} className="widget__article">
+      <div className="wiget__articleLeft">
         <FiberManualRecordIcon />
       </div>
-      <div className="widget_articleRight">
+      <div className="widget__articleRight">
         <h4>{heading}</h4>
         <p>{subtitle}</p>
       </div>
