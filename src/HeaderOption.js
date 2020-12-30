@@ -7,14 +7,13 @@ import { selectUser } from './features/userSlice';
 
 function HeaderOption({ avatar, Icon, title, onClick }) {
   const user = useSelector(selectUser);
-  const { photoUrl, displayName } = user || {};
 
   return (
     <div onClick={onClick} className="headerOption">
       {Icon && <Icon className='headerOption__icon' />}
       {avatar && (
         <Avatar className='headerOption__icon' src={user?.photoUrl}>
-          {user?.displayName[0]}
+          {user?.email[0]}
         </Avatar>
       )}
       <h3 className='headerOption__title'>{title}</h3>
