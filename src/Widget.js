@@ -29,7 +29,7 @@ const Widget = forwardRef((ref) => {
       <FlipMove>
         {newsArticle('gsggsggsgsgsgsggsgs', 'Top news - 9099 readers')}
         {newsArticle('Coronavirus - UK updates', 'Top news - 886 reader')}
-        {newsArticle('Tesla hśts new highs', 'Cars and Auto - 300 reader')}
+        {newsArticle('Tesla hśts new highs', 'Carsbdggdgd 300 reader')}
         {newsArticle('Bitcoin Breaks $22k', 'Crypto - 8000 reader')}
         {newsArticle('Is Redux too good?', 'Code - 123 reader')}
         {newsArticle('PAPA react launches course?', 'Top news - 6503 reader')}
