@@ -22,7 +22,7 @@ const Widget = forwardRef((ref) => {
   return (
     <div className='widget'>
       <div className="widget__header">
-        <h2>Linkedin News</h2>
+        <h2>BLA BLAH</h2>
         <InfoIcon />
       </div>
 
